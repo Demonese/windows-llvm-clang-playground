@@ -16,3 +16,5 @@
 ## Environment Variables
 
 - LLDB_USE_NATIVE_PDB_READER=1
+
+> Enable the LLDB debugger to read .pdb files
