@@ -7,6 +7,11 @@ target_compile_options(main PRIVATE
     $<$<CXX_COMPILER_ID:Clang>:-Wextra>
 )
 
+target_link_options(main PRIVATE
+    # lld-link bug workaround
+    $<$<CXX_COMPILER_ID:Clang>:LINKER:/manifestuac:no>
+)
+
 target_compile_features(main PRIVATE
     c_std_23
     cxx_std_23
@@ -24,6 +29,5 @@ target_compile_definitions(main PRIVATE
 
 target_sources(main PRIVATE
     main.cpp
+    main.manifest
 )
-
-target_win32_manifest(main ${CMAKE_CURRENT_LIST_DIR}/main.manifest)
