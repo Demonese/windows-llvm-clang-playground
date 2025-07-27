@@ -11,6 +11,8 @@
 - Ninja Build 1.13.x or newer
 - CMake 3.31.x or newer
 
+> Python 3.10.x is required by LLDB & LLDB DAP
+
 ## Environment Variables
 
 - LLDB_USE_NATIVE_PDB_READER=1
