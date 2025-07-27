@@ -1,4 +1,4 @@
 /.cache
 /build
-/.vscode
+/.vscode/*
 !/.vscode/launch.json

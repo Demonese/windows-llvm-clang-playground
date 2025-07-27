@@ -1,5 +1,7 @@
 # Windows: LLVM Clang + Visual Studio Code + clangd + lldb-dap
 
+![vscode debug example](doc/image1.png)
+
 ## System & Software
 
 - Windows 10 21H2 or newer
