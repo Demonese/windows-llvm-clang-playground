@@ -1,0 +1,19 @@
+BasedOnStyle: Google
+
+ColumnLimit: 256
+
+IndentWidth: 4
+UseTab: Never
+
+SortIncludes: true
+IncludeBlocks: Preserve
+IncludeCategories:
+  - Regex:    '^".*"$'
+    Priority: 1
+  - Regex:    '^<[^\.]*>$'
+    Priority: 2
+  # FUCK windows.h
+  - Regex:    '^<[Ww]indows.h>$'
+    Priority: 3
+  - Regex:    '^<.*\.{h|hpp}>$'
+    Priority: 4

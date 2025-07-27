@@ -1,0 +1,5 @@
+#include "winuser.h"
+
+#define MANIFEST_ID 1
+
+MANIFEST_ID RT_MANIFEST "main.manifest"
